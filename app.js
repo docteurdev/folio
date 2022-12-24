@@ -3,7 +3,7 @@ const cors = require('cors');
 const sequelize = require('./src/db/sequelize');
  const fileUpdoad = require('express-fileupload');
 
-const port =  3002;
+const port = process.env.PORT || 3002;
 const app = express();
 
 app.use(fileUpdoad());
